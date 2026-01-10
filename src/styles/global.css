@@ -85,33 +85,24 @@ h1, h2, h3, h4, h5, h6, .font-display {
 }
 
 /* === LIGHT MODE OVERRIDES === */
-:root.light {
-  /* Override hardcoded dark colors */
-  .bg-\[\#0F1512\] { background-color: var(--bg-canvas) !important; }
-  .bg-\[\#0F1512\]\/90 { background-color: rgba(232, 245, 236, 0.9) !important; }
-  .bg-\[\#151D19\] { background-color: var(--bg-surface) !important; }
-  .bg-\[\#1B2620\] { background-color: var(--bg-elevated) !important; }
+:root.light .bg-\[\#0F1512\] { background-color: var(--bg-canvas) !important; }
+:root.light .bg-\[\#0F1512\]\/90 { background-color: rgba(232, 245, 236, 0.9) !important; }
+:root.light .bg-\[\#151D19\] { background-color: var(--bg-surface) !important; }
+:root.light .bg-\[\#1B2620\] { background-color: var(--bg-elevated) !important; }
 
-  .border-\[\#243029\] { border-color: var(--border-default) !important; }
-  .border-\[\#2E3D35\] { border-color: var(--border-hover) !important; }
-  .hover\:border-\[\#2E3D35\]:hover { border-color: var(--border-hover) !important; }
+:root.light .border-\[\#243029\] { border-color: var(--border-default) !important; }
+:root.light .border-\[\#2E3D35\] { border-color: var(--border-hover) !important; }
+:root.light .hover\:border-\[\#2E3D35\]:hover { border-color: var(--border-hover) !important; }
 
-  .text-\[\#E8F0EC\] { color: var(--text-primary) !important; }
-  .text-\[\#9FADA5\] { color: var(--text-secondary) !important; }
-  .text-\[\#5F7168\] { color: var(--text-muted) !important; }
-  .hover\:text-\[\#E8F0EC\]:hover { color: var(--text-primary) !important; }
-  .hover\:text-\[\#9FADA5\]:hover { color: var(--text-secondary) !important; }
+:root.light .text-\[\#E8F0EC\] { color: var(--text-primary) !important; }
+:root.light .text-\[\#9FADA5\] { color: var(--text-secondary) !important; }
+:root.light .text-\[\#5F7168\] { color: var(--text-muted) !important; }
+:root.light .hover\:text-\[\#E8F0EC\]:hover { color: var(--text-primary) !important; }
+:root.light .hover\:text-\[\#9FADA5\]:hover { color: var(--text-secondary) !important; }
 
-  /* Button text stays dark on green button */
-  .text-\[\#0F1512\] { color: #0F1512 !important; }
+:root.light .text-\[\#0F1512\] { color: #0F1512 !important; }
+:root.light .from-\[\#0F1512\] { --tw-gradient-from: var(--bg-canvas) !important; }
+:root.light .hover\:bg-\[\#1B2620\]:hover { background-color: var(--bg-elevated) !important; }
 
-  /* Fix gradient fade */
-  .from-\[\#0F1512\] { --tw-gradient-from: var(--bg-canvas) !important; }
-
-  /* Hover backgrounds */
-  .hover\:bg-\[\#1B2620\]:hover { background-color: var(--bg-elevated) !important; }
-
-  /* Glow effects - reduce for light mode */
-  .glow-text { text-shadow: none; }
-  .glow-text-subtle { text-shadow: none; }
-}
+:root.light .glow-text { text-shadow: none; }
+:root.light .glow-text-subtle { text-shadow: none; }
