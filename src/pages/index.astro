@@ -13,7 +13,13 @@ const appUrl = 'https://app.nailing.ai';
           nailing.ai
         </span>
       </a>
-      <div class="flex items-center gap-6">
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#features" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">Özellikler</a>
+        <a href="#how-it-works" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">Nasıl Çalışır</a>
+        <a href="#pricing" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">Fiyatlar</a>
+        <a href="#faq" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">SSS</a>
+      </div>
+      <div class="flex items-center gap-4">
         <a
           href={`${appUrl}/login`}
           class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300"
@@ -31,40 +37,131 @@ const appUrl = 'https://app.nailing.ai';
   </nav>
 
   <!-- Hero -->
-  <section class="pt-40 pb-32 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-8">
-        AI-Powered Content Intelligence
-      </p>
+  <section class="pt-32 pb-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#7C9A82]/10 border border-[#7C9A82]/20 mb-8">
+          <span class="w-2 h-2 rounded-full bg-[#B8C9A3] animate-pulse"></span>
+          <span class="text-xs text-[#7C9A82]">Şimdi Beta'da</span>
+        </div>
 
-      <h1 class="text-5xl md:text-6xl font-semibold leading-[1.1] mb-8 tracking-tight">
-        <span class="text-[#E8EDE3]">İçerik üretimini</span>
-        <br />
-        <span class="text-[#B8C9A3] glow-text">yeniden tanımla</span>
-      </h1>
+        <h1 class="text-5xl md:text-7xl font-semibold leading-[1.05] mb-8 tracking-tight">
+          <span class="text-[#E8EDE3]">İçerik üretimini</span>
+          <br />
+          <span class="text-[#B8C9A3] glow-text">yeniden tanımla</span>
+        </h1>
 
-      <p class="text-lg text-[#7C9A82] max-w-xl mx-auto mb-12 leading-relaxed">
-        Video analizi, rakip araştırması ve içerik üretimi.
-        <br />
-        Tek platform, sınırsız olasılık.
-      </p>
+        <p class="text-lg md:text-xl text-[#7C9A82] max-w-2xl mx-auto mb-12 leading-relaxed">
+          Video analizi, rakip araştırması ve AI destekli içerik üretimi.
+          <br class="hidden md:block" />
+          Tek kanvas, sınırsız olasılık.
+        </p>
 
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a
-          href={`${appUrl}/register`}
-          class="group flex items-center gap-3 px-8 py-4 text-base font-medium text-[#0D1A14] bg-[#B8C9A3] rounded-xl hover:bg-[#C8D9B3] transition-all duration-300"
-        >
-          Ücretsiz Dene
-          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
-        <a
-          href="#features"
-          class="px-8 py-4 text-base font-medium text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300"
-        >
-          Keşfet
-        </a>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <a
+            href={`${appUrl}/register`}
+            class="group flex items-center gap-3 px-8 py-4 text-base font-medium text-[#0D1A14] bg-[#B8C9A3] rounded-xl hover:bg-[#C8D9B3] transition-all duration-300 hover:scale-[1.02]"
+          >
+            Ücretsiz Dene
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a
+            href="#how-it-works"
+            class="group flex items-center gap-2 px-8 py-4 text-base font-medium text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300"
+          >
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Nasıl çalışır?
+          </a>
+        </div>
+
+        <p class="text-sm text-[#5A6B5E]">Kredi kartı gerektirmez • 30 ücretsiz kredi</p>
+      </div>
+
+      <!-- App Preview -->
+      <div class="relative max-w-5xl mx-auto">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0D1A14] via-transparent to-transparent z-10 pointer-events-none"></div>
+        <div class="rounded-2xl border border-[#7C9A82]/20 bg-[#0A1410] overflow-hidden shadow-2xl shadow-[#B8C9A3]/5">
+          <!-- Browser Header -->
+          <div class="flex items-center gap-2 px-4 py-3 border-b border-[#7C9A82]/10 bg-[#0F1F18]">
+            <div class="flex gap-1.5">
+              <div class="w-3 h-3 rounded-full bg-[#5A6B5E]/50"></div>
+              <div class="w-3 h-3 rounded-full bg-[#5A6B5E]/50"></div>
+              <div class="w-3 h-3 rounded-full bg-[#5A6B5E]/50"></div>
+            </div>
+            <div class="flex-1 mx-4">
+              <div class="max-w-sm mx-auto px-4 py-1.5 rounded-lg bg-[#0D1A14] text-xs text-[#5A6B5E] text-center">
+                app.nailing.ai
+              </div>
+            </div>
+          </div>
+
+          <!-- Canvas Mockup -->
+          <div class="p-6 min-h-[400px] relative bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%220.5%22%20fill%3D%22%237C9A82%22%20fill-opacity%3D%220.1%22%2F%3E%3C%2Fsvg%3E')]">
+            <!-- Nodes -->
+            <div class="absolute top-8 left-8 w-64 rounded-xl bg-[#0F1F18] border border-[#7C9A82]/20 p-4 animate-float-slow">
+              <div class="flex items-center gap-2 mb-3">
+                <div class="w-6 h-6 rounded bg-red-500/20 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/></svg>
+                </div>
+                <span class="text-xs text-[#E8EDE3] font-medium">YouTube Video</span>
+              </div>
+              <div class="text-xs text-[#5A6B5E] truncate">youtube.com/watch?v=...</div>
+              <div class="mt-3 h-1.5 rounded-full bg-[#7C9A82]/20 overflow-hidden">
+                <div class="h-full w-3/4 rounded-full bg-[#B8C9A3]"></div>
+              </div>
+            </div>
+
+            <div class="absolute top-32 right-12 w-72 rounded-xl bg-[#0F1F18] border border-[#B8C9A3]/30 p-4 animate-float">
+              <div class="flex items-center gap-2 mb-3">
+                <div class="w-6 h-6 rounded bg-[#B8C9A3]/20 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                </div>
+                <span class="text-xs text-[#E8EDE3] font-medium">AI Asistan</span>
+                <span class="ml-auto text-[10px] text-[#B8C9A3] px-2 py-0.5 rounded-full bg-[#B8C9A3]/10">Claude</span>
+              </div>
+              <div class="text-xs text-[#7C9A82] leading-relaxed">
+                Bu videonun ana mesajını özetle ve 3 Instagram Reels fikri üret...
+              </div>
+              <div class="mt-3 flex gap-1">
+                <span class="w-1 h-3 rounded-full bg-[#B8C9A3] animate-pulse"></span>
+                <span class="w-1 h-3 rounded-full bg-[#B8C9A3] animate-pulse" style="animation-delay: 0.2s"></span>
+                <span class="w-1 h-3 rounded-full bg-[#B8C9A3] animate-pulse" style="animation-delay: 0.4s"></span>
+              </div>
+            </div>
+
+            <div class="absolute bottom-16 left-1/3 w-56 rounded-xl bg-[#0F1F18] border border-[#7C9A82]/20 p-4 animate-float-delayed">
+              <div class="flex items-center gap-2 mb-3">
+                <div class="w-6 h-6 rounded bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                  <svg class="w-3 h-3 text-pink-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                </div>
+                <span class="text-xs text-[#E8EDE3] font-medium">Instagram Profil</span>
+              </div>
+              <div class="text-xs text-[#5A6B5E]">@competitor_account</div>
+              <div class="mt-2 grid grid-cols-3 gap-1">
+                <div class="aspect-square rounded bg-[#7C9A82]/10"></div>
+                <div class="aspect-square rounded bg-[#7C9A82]/10"></div>
+                <div class="aspect-square rounded bg-[#7C9A82]/10"></div>
+              </div>
+            </div>
+
+            <!-- Connection Lines SVG -->
+            <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: -1">
+              <defs>
+                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#B8C9A3" stop-opacity="0.3" />
+                  <stop offset="100%" stop-color="#B8C9A3" stop-opacity="0.1" />
+                </linearGradient>
+              </defs>
+              <path d="M 280 80 Q 400 120 450 180" stroke="url(#lineGradient)" stroke-width="2" fill="none" stroke-dasharray="5,5" class="animate-dash" />
+              <path d="M 280 100 Q 320 200 340 280" stroke="url(#lineGradient)" stroke-width="2" fill="none" stroke-dasharray="5,5" class="animate-dash" />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -75,25 +172,94 @@ const appUrl = 'https://app.nailing.ai';
       <p class="text-center text-xs text-[#5A6B5E] uppercase tracking-[0.2em] mb-8">
         Desteklenen Platformlar
       </p>
-      <div class="flex items-center justify-center gap-12 md:gap-16 text-[#5A6B5E]">
-        <div class="flex items-center gap-2 hover:text-[#7C9A82] transition-colors">
+      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 text-[#5A6B5E]">
+        <div class="flex items-center gap-2 hover:text-[#7C9A82] transition-colors cursor-default">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           <span class="text-sm font-medium">Instagram</span>
         </div>
-        <div class="flex items-center gap-2 hover:text-[#7C9A82] transition-colors">
+        <div class="flex items-center gap-2 hover:text-[#7C9A82] transition-colors cursor-default">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           <span class="text-sm font-medium">YouTube</span>
         </div>
-        <div class="flex items-center gap-2 hover:text-[#7C9A82] transition-colors">
+        <div class="flex items-center gap-2 hover:text-[#7C9A82] transition-colors cursor-default">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
           <span class="text-sm font-medium">TikTok</span>
+        </div>
+        <div class="flex items-center gap-2 hover:text-[#7C9A82] transition-colors cursor-default">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <span class="text-sm font-medium">X (Twitter)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="how-it-works" class="py-32 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-20">
+        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">Nasıl Çalışır</p>
+        <h2 class="text-3xl md:text-4xl font-semibold text-[#E8EDE3] tracking-tight">
+          3 adımda içerik üret
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="relative group">
+          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">
+            1
+          </div>
+          <div class="pt-10 pl-4">
+            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">Kaynak Ekle</h3>
+            <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
+              YouTube videosu, Instagram profili veya rakip hesabı kanvasa sürükle. Otomatik olarak analiz edilsin.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Video URL</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Profil linki</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Ses dosyası</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">
+            2
+          </div>
+          <div class="pt-10 pl-4">
+            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">AI ile Analiz Et</h3>
+            <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
+              Claude, GPT-4 veya Gemini ile analiz yap. Transkript, sahne açıklamaları ve içerik önerileri al.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Transkript</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Storyboard</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Özet</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">
+            3
+          </div>
+          <div class="pt-10 pl-4">
+            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">İçerik Üret</h3>
+            <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
+              Analiz sonuçlarını kullanarak yeni içerikler üret. Script, caption, hashtag ve daha fazlası.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Script</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Caption</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Hook</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Features -->
-  <section id="features" class="py-32 px-6">
+  <section id="features" class="py-32 px-6 bg-[#0A1410]">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-20">
         <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">Özellikler</p>
@@ -102,60 +268,84 @@ const appUrl = 'https://app.nailing.ai';
         </h2>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-4">
-        <div class="group p-8 rounded-2xl bg-[#0F1F18] border border-[#7C9A82]/10 hover:border-[#7C9A82]/25 transition-colors duration-500">
-          <div class="w-10 h-10 rounded-lg bg-[#7C9A82]/10 flex items-center justify-center mb-6">
-            <svg class="w-5 h-5 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href={`${appUrl}/register`} class="group p-8 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#B8C9A3]/30 transition-all duration-500 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-[#7C9A82]/10 flex items-center justify-center mb-6 group-hover:bg-[#B8C9A3]/20 transition-colors">
+            <svg class="w-6 h-6 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3 class="text-lg font-medium text-[#E8EDE3] mb-3">Video Analizi</h3>
-          <p class="text-sm text-[#7C9A82] leading-relaxed">
-            YouTube, Instagram ve TikTok videolarından transkript, sahne açıklamaları ve storyboard oluştur.
+          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Video Analizi</h3>
+          <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
+            YouTube, Instagram Reels ve TikTok videolarından otomatik transkript çıkar. Sahne sahne görsel analiz ve storyboard oluştur.
           </p>
-        </div>
+          <span class="inline-flex items-center gap-2 text-sm text-[#B8C9A3] opacity-0 group-hover:opacity-100 transition-opacity">
+            Dene
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </a>
 
-        <div class="group p-8 rounded-2xl bg-[#0F1F18] border border-[#7C9A82]/10 hover:border-[#7C9A82]/25 transition-colors duration-500">
-          <div class="w-10 h-10 rounded-lg bg-[#7C9A82]/10 flex items-center justify-center mb-6">
-            <svg class="w-5 h-5 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <a href={`${appUrl}/register`} class="group p-8 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#B8C9A3]/30 transition-all duration-500 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-[#7C9A82]/10 flex items-center justify-center mb-6 group-hover:bg-[#B8C9A3]/20 transition-colors">
+            <svg class="w-6 h-6 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
-          <h3 class="text-lg font-medium text-[#E8EDE3] mb-3">AI Asistan</h3>
-          <p class="text-sm text-[#7C9A82] leading-relaxed">
-            Claude, GPT-4 ve Gemini. Kanvastaki tüm veriler otomatik olarak context'e dahil.
+          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">AI Asistan</h3>
+          <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
+            Claude 3.5, GPT-4, Gemini ve daha fazlası. Kanvastaki tüm veriler otomatik olarak context'e dahil edilir.
           </p>
-        </div>
+          <span class="inline-flex items-center gap-2 text-sm text-[#B8C9A3] opacity-0 group-hover:opacity-100 transition-opacity">
+            Dene
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </a>
 
-        <div class="group p-8 rounded-2xl bg-[#0F1F18] border border-[#7C9A82]/10 hover:border-[#7C9A82]/25 transition-colors duration-500">
-          <div class="w-10 h-10 rounded-lg bg-[#7C9A82]/10 flex items-center justify-center mb-6">
-            <svg class="w-5 h-5 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <a href={`${appUrl}/register`} class="group p-8 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#B8C9A3]/30 transition-all duration-500 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-[#7C9A82]/10 flex items-center justify-center mb-6 group-hover:bg-[#B8C9A3]/20 transition-colors">
+            <svg class="w-6 h-6 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
           </div>
-          <h3 class="text-lg font-medium text-[#E8EDE3] mb-3">Rakip Analizi</h3>
-          <p class="text-sm text-[#7C9A82] leading-relaxed">
-            Rakip profilleri analiz et. İçerik stratejilerini çöz, trendleri yakala.
+          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Rakip Analizi</h3>
+          <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
+            Rakip Instagram profillerini analiz et. İçerik stratejilerini çöz, en iyi performans gösteren postları keşfet.
           </p>
-        </div>
+          <span class="inline-flex items-center gap-2 text-sm text-[#B8C9A3] opacity-0 group-hover:opacity-100 transition-opacity">
+            Dene
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </a>
 
-        <div class="group p-8 rounded-2xl bg-[#0F1F18] border border-[#7C9A82]/10 hover:border-[#7C9A82]/25 transition-colors duration-500">
-          <div class="w-10 h-10 rounded-lg bg-[#7C9A82]/10 flex items-center justify-center mb-6">
-            <svg class="w-5 h-5 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <a href={`${appUrl}/register`} class="group p-8 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#B8C9A3]/30 transition-all duration-500 hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-[#7C9A82]/10 flex items-center justify-center mb-6 group-hover:bg-[#B8C9A3]/20 transition-colors">
+            <svg class="w-6 h-6 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
             </svg>
           </div>
-          <h3 class="text-lg font-medium text-[#E8EDE3] mb-3">Görsel Kanvas</h3>
-          <p class="text-sm text-[#7C9A82] leading-relaxed">
-            Node bazlı çalışma alanı. Fikirlerini görselleştir, bağlantılar kur.
+          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Görsel Kanvas</h3>
+          <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
+            Node bazlı çalışma alanı. Fikirlerini görselleştir, bağlantılar kur, her şeyi tek yerde organize et.
           </p>
-        </div>
+          <span class="inline-flex items-center gap-2 text-sm text-[#B8C9A3] opacity-0 group-hover:opacity-100 transition-opacity">
+            Dene
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" class="py-32 px-6 bg-[#0A1410]">
+  <section id="pricing" class="py-32 px-6">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-16">
         <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">Fiyatlandırma</p>
@@ -164,85 +354,169 @@ const appUrl = 'https://app.nailing.ai';
         </h2>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-4">
-        <div class="p-8 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-8 rounded-2xl bg-[#0F1F18] border border-[#7C9A82]/10 hover:border-[#7C9A82]/25 transition-colors">
           <p class="text-sm text-[#7C9A82] mb-2">Free</p>
-          <div class="text-3xl font-semibold text-[#E8EDE3] mb-6">$0</div>
-          <ul class="space-y-3 text-sm text-[#7C9A82] mb-8">
+          <div class="text-4xl font-semibold text-[#E8EDE3] mb-6">$0</div>
+          <ul class="space-y-4 text-sm text-[#7C9A82] mb-8">
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               30 kredi/ay
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               1 kanvas
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              Temel AI
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Temel AI modelleri
             </li>
           </ul>
-          <a href={`${appUrl}/register`} class="block w-full py-3 text-center text-sm font-medium text-[#7C9A82] border border-[#7C9A82]/20 rounded-lg hover:border-[#7C9A82]/40 transition-colors duration-300">
-            Başla
+          <a href={`${appUrl}/register`} class="block w-full py-3.5 text-center text-sm font-medium text-[#7C9A82] border border-[#7C9A82]/20 rounded-xl hover:border-[#7C9A82]/40 hover:text-[#B8C9A3] transition-all duration-300">
+            Ücretsiz Başla
           </a>
         </div>
 
-        <div class="p-8 rounded-2xl bg-[#0F1F18] border border-[#B8C9A3]/30 relative">
-          <div class="absolute -top-3 left-6 px-3 py-1 bg-[#B8C9A3] text-[#0D1A14] text-xs font-medium rounded-full">
-            Popüler
+        <div class="p-8 rounded-2xl bg-[#0F1F18] border-2 border-[#B8C9A3]/40 relative scale-105 shadow-xl shadow-[#B8C9A3]/5">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#B8C9A3] text-[#0D1A14] text-xs font-semibold rounded-full">
+            En Popüler
           </div>
           <p class="text-sm text-[#B8C9A3] mb-2">Pro</p>
-          <div class="text-3xl font-semibold text-[#E8EDE3] mb-1">$29</div>
-          <p class="text-xs text-[#5A6B5E] mb-6">/ay</p>
-          <ul class="space-y-3 text-sm text-[#7C9A82] mb-8">
+          <div class="flex items-baseline gap-1">
+            <span class="text-4xl font-semibold text-[#E8EDE3]">$29</span>
+            <span class="text-sm text-[#5A6B5E]">/ay</span>
+          </div>
+          <p class="text-xs text-[#5A6B5E] mt-1 mb-6">veya $290/yıl (2 ay ücretsiz)</p>
+          <ul class="space-y-4 text-sm text-[#7C9A82] mb-8">
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               500 kredi/ay
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               Sınırsız kanvas
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               Tüm AI modelleri
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               Video analizi
             </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Rakip analizi
+            </li>
           </ul>
-          <a href={`${appUrl}/register`} class="block w-full py-3 text-center text-sm font-medium text-[#0D1A14] bg-[#B8C9A3] rounded-lg hover:bg-[#C8D9B3] transition-colors duration-300">
+          <a href={`${appUrl}/register`} class="block w-full py-3.5 text-center text-sm font-semibold text-[#0D1A14] bg-[#B8C9A3] rounded-xl hover:bg-[#C8D9B3] transition-all duration-300">
             Pro'ya Geç
           </a>
         </div>
 
-        <div class="p-8 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10">
+        <div class="p-8 rounded-2xl bg-[#0F1F18] border border-[#7C9A82]/10 hover:border-[#7C9A82]/25 transition-colors">
           <p class="text-sm text-[#7C9A82] mb-2">Business</p>
-          <div class="text-3xl font-semibold text-[#E8EDE3] mb-1">$79</div>
-          <p class="text-xs text-[#5A6B5E] mb-6">/ay</p>
-          <ul class="space-y-3 text-sm text-[#7C9A82] mb-8">
+          <div class="flex items-baseline gap-1">
+            <span class="text-4xl font-semibold text-[#E8EDE3]">$79</span>
+            <span class="text-sm text-[#5A6B5E]">/ay</span>
+          </div>
+          <p class="text-xs text-[#5A6B5E] mt-1 mb-6">veya $790/yıl (2 ay ücretsiz)</p>
+          <ul class="space-y-4 text-sm text-[#7C9A82] mb-8">
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               1500 kredi/ay
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              Ekip paylaşımı
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              Ekip paylaşımı (5 kişi)
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               API erişimi
             </li>
             <li class="flex items-center gap-3">
-              <svg class="w-4 h-4 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+              <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
               Öncelikli destek
             </li>
           </ul>
-          <a href="mailto:hello@nailing.ai" class="block w-full py-3 text-center text-sm font-medium text-[#7C9A82] border border-[#7C9A82]/20 rounded-lg hover:border-[#7C9A82]/40 transition-colors duration-300">
-            İletişim
+          <a href="mailto:hello@nailing.ai" class="block w-full py-3.5 text-center text-sm font-medium text-[#7C9A82] border border-[#7C9A82]/20 rounded-xl hover:border-[#7C9A82]/40 hover:text-[#B8C9A3] transition-all duration-300">
+            İletişime Geç
           </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-32 px-6 bg-[#0A1410]">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-16">
+        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">SSS</p>
+        <h2 class="text-3xl md:text-4xl font-semibold text-[#E8EDE3] tracking-tight">
+          Sık Sorulan Sorular
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8EDE3] font-medium">Kredi sistemi nasıl çalışıyor?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
+            Her AI işlemi belirli miktarda kredi tüketir. Örneğin bir AI mesajı 1 kredi, video analizi 5 kredi, rakip profil analizi 3 kredi tüketir. Kredileriniz her ay yenilenir.
+          </p>
+        </details>
+
+        <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8EDE3] font-medium">Hangi AI modelleri destekleniyor?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
+            Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, Llama 3.1 ve daha birçok model desteklenmektedir. Pro ve Business planlarında tüm modellere erişebilirsiniz.
+          </p>
+        </details>
+
+        <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8EDE3] font-medium">Video analizi ne kadar sürer?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
+            Video uzunluğuna bağlı olarak 30 saniye ile 2 dakika arasında değişir. Transkript, sahne analizi ve storyboard otomatik olarak oluşturulur.
+          </p>
+        </details>
+
+        <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8EDE3] font-medium">Aboneliğimi istediğim zaman iptal edebilir miyim?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
+            Evet, aboneliğinizi istediğiniz zaman iptal edebilirsiniz. İptal sonrası mevcut dönem sonuna kadar tüm özellikleri kullanmaya devam edebilirsiniz.
+          </p>
+        </details>
+
+        <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8EDE3] font-medium">Verilerim güvende mi?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
+            Evet, tüm veriler şifrelenerek saklanır. Kanvaslarınız ve içerikleriniz sadece size aittir. Üçüncü taraflarla paylaşılmaz ve AI model eğitimi için kullanılmaz.
+          </p>
+        </details>
       </div>
     </div>
   </section>
@@ -250,15 +524,15 @@ const appUrl = 'https://app.nailing.ai';
   <!-- CTA -->
   <section class="py-32 px-6">
     <div class="max-w-2xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-semibold text-[#E8EDE3] tracking-tight mb-6">
+      <h2 class="text-3xl md:text-5xl font-semibold text-[#E8EDE3] tracking-tight mb-6">
         Hemen başla
       </h2>
-      <p class="text-[#7C9A82] mb-10">
-        Kredi kartı gerektirmez. 30 ücretsiz kredi.
+      <p class="text-lg text-[#7C9A82] mb-10">
+        Kredi kartı gerektirmez. 30 ücretsiz kredi ile dene.
       </p>
       <a
         href={`${appUrl}/register`}
-        class="inline-flex items-center gap-3 px-10 py-4 text-base font-medium text-[#0D1A14] bg-[#B8C9A3] rounded-xl hover:bg-[#C8D9B3] transition-all duration-300"
+        class="inline-flex items-center gap-3 px-10 py-4 text-base font-medium text-[#0D1A14] bg-[#B8C9A3] rounded-xl hover:bg-[#C8D9B3] transition-all duration-300 hover:scale-[1.02]"
       >
         Ücretsiz Hesap Oluştur
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -269,19 +543,91 @@ const appUrl = 'https://app.nailing.ai';
   </section>
 
   <!-- Footer -->
-  <footer class="py-12 px-6 border-t border-[#7C9A82]/10">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <span class="text-lg font-medium text-[#B8C9A3] glow-text-subtle">
-        nailing.ai
-      </span>
-      <div class="flex items-center gap-8 text-sm text-[#5A6B5E]">
-        <a href="/privacy" class="hover:text-[#7C9A82] transition-colors">Gizlilik</a>
-        <a href="/terms" class="hover:text-[#7C9A82] transition-colors">Şartlar</a>
-        <a href="mailto:hello@nailing.ai" class="hover:text-[#7C9A82] transition-colors">İletişim</a>
+  <footer class="py-16 px-6 border-t border-[#7C9A82]/10">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col md:flex-row items-start justify-between gap-12 mb-12">
+        <div>
+          <span class="text-xl font-medium text-[#B8C9A3] glow-text-subtle">
+            nailing.ai
+          </span>
+          <p class="mt-3 text-sm text-[#5A6B5E] max-w-xs">
+            AI destekli içerik üretim platformu. Video analizi, rakip araştırması ve daha fazlası.
+          </p>
+        </div>
+        <div class="flex gap-16">
+          <div>
+            <p class="text-sm font-medium text-[#7C9A82] mb-4">Ürün</p>
+            <ul class="space-y-3 text-sm text-[#5A6B5E]">
+              <li><a href="#features" class="hover:text-[#7C9A82] transition-colors">Özellikler</a></li>
+              <li><a href="#pricing" class="hover:text-[#7C9A82] transition-colors">Fiyatlar</a></li>
+              <li><a href="#faq" class="hover:text-[#7C9A82] transition-colors">SSS</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-sm font-medium text-[#7C9A82] mb-4">Yasal</p>
+            <ul class="space-y-3 text-sm text-[#5A6B5E]">
+              <li><a href="/privacy" class="hover:text-[#7C9A82] transition-colors">Gizlilik</a></li>
+              <li><a href="/terms" class="hover:text-[#7C9A82] transition-colors">Şartlar</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-sm font-medium text-[#7C9A82] mb-4">İletişim</p>
+            <ul class="space-y-3 text-sm text-[#5A6B5E]">
+              <li><a href="mailto:hello@nailing.ai" class="hover:text-[#7C9A82] transition-colors">hello@nailing.ai</a></li>
+              <li><a href="https://twitter.com/nailingai" target="_blank" class="hover:text-[#7C9A82] transition-colors">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <p class="text-sm text-[#5A6B5E]">
-        &copy; 2025
-      </p>
+      <div class="pt-8 border-t border-[#7C9A82]/10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-[#5A6B5E]">
+          &copy; 2025 nailing.ai. Tüm hakları saklıdır.
+        </p>
+        <p class="text-xs text-[#5A6B5E]">
+          Made with ❤️ in Istanbul
+        </p>
+      </div>
     </div>
   </footer>
 </Layout>
+
+<style>
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+  }
+
+  @keyframes dash {
+    to { stroke-dashoffset: -20; }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float-slow 5s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+
+  .animate-dash {
+    animation: dash 2s linear infinite;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
