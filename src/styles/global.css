@@ -1,16 +1,40 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0D1A14;
-  --color-bg-alt: #0A1410;
-  --color-bg-card: #0F1F18;
-  --color-primary: #B8C9A3;
-  --color-primary-hover: #C8D9B3;
-  --color-text: #E8EDE3;
-  --color-text-muted: #7C9A82;
-  --color-text-subtle: #5A6B5E;
-  --color-border: rgba(124, 154, 130, 0.1);
-  --color-border-hover: rgba(124, 154, 130, 0.25);
+  /* === PRIMARY GREEN === */
+  --color-primary-300: #6EE7B7;
+  --color-primary-400: #34D399;
+  --color-primary-500: #10B981;
+  --color-primary-600: #059669;
+
+  /* === FONTS === */
+  --font-display: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Inter', 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* === DARK THEME (default) === */
+:root {
+  --bg-canvas: #0F1512;
+  --bg-surface: #151D19;
+  --bg-elevated: #1B2620;
+  --border-default: #243029;
+  --border-hover: #2E3D35;
+  --text-primary: #E8F0EC;
+  --text-secondary: #9FADA5;
+  --text-muted: #5F7168;
+}
+
+/* === LIGHT THEME === */
+:root.light {
+  --bg-canvas: #E8F5EC;
+  --bg-surface: #DCF0E3;
+  --bg-elevated: #D0E8D8;
+  --border-default: #A8D4B8;
+  --border-hover: #8DC4A0;
+  --text-primary: #1A2D23;
+  --text-secondary: #3D5347;
+  --text-muted: #5A7A68;
 }
 
 html {
@@ -18,21 +42,76 @@ html {
 }
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
 }
 
 ::selection {
-  background-color: rgba(124, 154, 130, 0.3);
+  background-color: rgba(16, 185, 129, 0.3);
 }
 
+/* === GLOW EFFECTS === */
 .glow-text {
-  text-shadow: 0 0 40px rgba(184, 201, 163, 0.2);
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
 }
 
 .glow-text-subtle {
-  text-shadow: 0 0 30px rgba(184, 201, 163, 0.15);
+  text-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+}
+
+.glow-primary {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4),
+              0 0 40px rgba(16, 185, 129, 0.2);
+}
+
+/* === GRADIENT === */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary-400), var(--color-primary-600));
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary-300), var(--color-primary-500));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === LIGHT MODE OVERRIDES === */
+:root.light {
+  /* Override hardcoded dark colors */
+  .bg-\[\#0F1512\] { background-color: var(--bg-canvas) !important; }
+  .bg-\[\#0F1512\]\/90 { background-color: rgba(232, 245, 236, 0.9) !important; }
+  .bg-\[\#151D19\] { background-color: var(--bg-surface) !important; }
+  .bg-\[\#1B2620\] { background-color: var(--bg-elevated) !important; }
+
+  .border-\[\#243029\] { border-color: var(--border-default) !important; }
+  .border-\[\#2E3D35\] { border-color: var(--border-hover) !important; }
+  .hover\:border-\[\#2E3D35\]:hover { border-color: var(--border-hover) !important; }
+
+  .text-\[\#E8F0EC\] { color: var(--text-primary) !important; }
+  .text-\[\#9FADA5\] { color: var(--text-secondary) !important; }
+  .text-\[\#5F7168\] { color: var(--text-muted) !important; }
+  .hover\:text-\[\#E8F0EC\]:hover { color: var(--text-primary) !important; }
+  .hover\:text-\[\#9FADA5\]:hover { color: var(--text-secondary) !important; }
+
+  /* Button text stays dark on green button */
+  .text-\[\#0F1512\] { color: #0F1512 !important; }
+
+  /* Fix gradient fade */
+  .from-\[\#0F1512\] { --tw-gradient-from: var(--bg-canvas) !important; }
+
+  /* Hover backgrounds */
+  .hover\:bg-\[\#1B2620\]:hover { background-color: var(--bg-elevated) !important; }
+
+  /* Glow effects - reduce for light mode */
+  .glow-text { text-shadow: none; }
+  .glow-text-subtle { text-shadow: none; }
 }
