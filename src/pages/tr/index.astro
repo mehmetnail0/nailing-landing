@@ -1,37 +1,37 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 
 const appUrl = 'https://app.nailing.ai';
 ---
 
-<Layout title="nailing.ai - AI-Powered Content Intelligence">
+<Layout title="nailing.ai - AI Destekli Icerik Uretimi">
   <!-- Navbar -->
   <nav class="fixed top-0 w-full z-50 bg-[#0D1A14]/90 backdrop-blur-xl border-b border-[#7C9A82]/10">
     <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-      <a href="/" class="group">
+      <a href="/tr" class="group">
         <span class="text-2xl font-medium tracking-tight text-[#B8C9A3] glow-text-subtle">
           nailing.ai
         </span>
       </a>
       <div class="hidden md:flex items-center gap-8">
-        <a href="#features" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">Features</a>
-        <a href="#how-it-works" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">How It Works</a>
-        <a href="#pricing" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">Pricing</a>
-        <a href="#faq" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">FAQ</a>
+        <a href="#features" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">Ozellikler</a>
+        <a href="#how-it-works" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">Nasil Calisir</a>
+        <a href="#pricing" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">Fiyatlar</a>
+        <a href="#faq" class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300">SSS</a>
       </div>
       <div class="flex items-center gap-4">
-        <a href="/tr" class="text-xs text-[#5A6B5E] hover:text-[#7C9A82] transition-colors">TR</a>
+        <a href="/" class="text-xs text-[#5A6B5E] hover:text-[#7C9A82] transition-colors">EN</a>
         <a
           href={`${appUrl}/login`}
           class="text-sm text-[#7C9A82] hover:text-[#B8C9A3] transition-colors duration-300"
         >
-          Login
+          Giris
         </a>
         <a
           href={`${appUrl}/register`}
           class="px-5 py-2.5 text-sm font-medium text-[#0D1A14] bg-[#B8C9A3] rounded-lg hover:bg-[#C8D9B3] transition-colors duration-300"
         >
-          Get Started
+          Basla
         </a>
       </div>
     </div>
@@ -43,19 +43,19 @@ const appUrl = 'https://app.nailing.ai';
       <div class="text-center mb-16">
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#7C9A82]/10 border border-[#7C9A82]/20 mb-8">
           <span class="w-2 h-2 rounded-full bg-[#B8C9A3] animate-pulse"></span>
-          <span class="text-xs text-[#7C9A82]">Now in Beta</span>
+          <span class="text-xs text-[#7C9A82]">Simdi Beta'da</span>
         </div>
 
         <h1 class="text-5xl md:text-7xl font-semibold leading-[1.05] mb-8 tracking-tight">
-          <span class="text-[#E8EDE3]">Redefine your</span>
+          <span class="text-[#E8EDE3]">Icerik uretimini</span>
           <br />
-          <span class="text-[#B8C9A3] glow-text">content creation</span>
+          <span class="text-[#B8C9A3] glow-text">yeniden tanimla</span>
         </h1>
 
         <p class="text-lg md:text-xl text-[#7C9A82] max-w-2xl mx-auto mb-12 leading-relaxed">
-          Video analysis, competitor research, and AI-powered content creation.
+          Video analizi, rakip arastirmasi ve AI destekli icerik uretimi.
           <br class="hidden md:block" />
-          One canvas, unlimited possibilities.
+          Tek kanvas, sinirsiz olanak.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
@@ -63,7 +63,7 @@ const appUrl = 'https://app.nailing.ai';
             href={`${appUrl}/register`}
             class="group flex items-center gap-3 px-8 py-4 text-base font-medium text-[#0D1A14] bg-[#B8C9A3] rounded-xl hover:bg-[#C8D9B3] transition-all duration-300 hover:scale-[1.02]"
           >
-            Try for Free
+            Ucretsiz Dene
             <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -76,18 +76,17 @@ const appUrl = 'https://app.nailing.ai';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            How it works
+            Nasil calisir?
           </a>
         </div>
 
-        <p class="text-sm text-[#5A6B5E]">No credit card required • 30 free credits</p>
+        <p class="text-sm text-[#5A6B5E]">Kredi karti gerektirmez • 30 ucretsiz kredi</p>
       </div>
 
       <!-- App Preview -->
       <div class="relative max-w-5xl mx-auto">
         <div class="absolute inset-0 bg-gradient-to-t from-[#0D1A14] via-transparent to-transparent z-10 pointer-events-none"></div>
         <div class="rounded-2xl border border-[#7C9A82]/20 bg-[#0A1410] overflow-hidden shadow-2xl shadow-[#B8C9A3]/5">
-          <!-- Browser Header -->
           <div class="flex items-center gap-2 px-4 py-3 border-b border-[#7C9A82]/10 bg-[#0F1F18]">
             <div class="flex gap-1.5">
               <div class="w-3 h-3 rounded-full bg-[#5A6B5E]/50"></div>
@@ -100,10 +99,7 @@ const appUrl = 'https://app.nailing.ai';
               </div>
             </div>
           </div>
-
-          <!-- Canvas Mockup -->
           <div class="p-6 min-h-[400px] relative bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%220.5%22%20fill%3D%22%237C9A82%22%20fill-opacity%3D%220.1%22%2F%3E%3C%2Fsvg%3E')]">
-            <!-- Nodes -->
             <div class="absolute top-8 left-8 w-64 rounded-xl bg-[#0F1F18] border border-[#7C9A82]/20 p-4 animate-float-slow">
               <div class="flex items-center gap-2 mb-3">
                 <div class="w-6 h-6 rounded bg-red-500/20 flex items-center justify-center">
@@ -116,17 +112,16 @@ const appUrl = 'https://app.nailing.ai';
                 <div class="h-full w-3/4 rounded-full bg-[#B8C9A3]"></div>
               </div>
             </div>
-
             <div class="absolute top-32 right-12 w-72 rounded-xl bg-[#0F1F18] border border-[#B8C9A3]/30 p-4 animate-float">
               <div class="flex items-center gap-2 mb-3">
                 <div class="w-6 h-6 rounded bg-[#B8C9A3]/20 flex items-center justify-center">
                   <svg class="w-3 h-3 text-[#B8C9A3]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                 </div>
-                <span class="text-xs text-[#E8EDE3] font-medium">AI Assistant</span>
+                <span class="text-xs text-[#E8EDE3] font-medium">AI Asistan</span>
                 <span class="ml-auto text-[10px] text-[#B8C9A3] px-2 py-0.5 rounded-full bg-[#B8C9A3]/10">Claude</span>
               </div>
               <div class="text-xs text-[#7C9A82] leading-relaxed">
-                Summarize this video and generate 3 Instagram Reels ideas...
+                Bu videonun ana mesajini ozetle ve 3 Instagram Reels fikri uret...
               </div>
               <div class="mt-3 flex gap-1">
                 <span class="w-1 h-3 rounded-full bg-[#B8C9A3] animate-pulse"></span>
@@ -134,33 +129,20 @@ const appUrl = 'https://app.nailing.ai';
                 <span class="w-1 h-3 rounded-full bg-[#B8C9A3] animate-pulse" style="animation-delay: 0.4s"></span>
               </div>
             </div>
-
             <div class="absolute bottom-16 left-1/3 w-56 rounded-xl bg-[#0F1F18] border border-[#7C9A82]/20 p-4 animate-float-delayed">
               <div class="flex items-center gap-2 mb-3">
                 <div class="w-6 h-6 rounded bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
                   <svg class="w-3 h-3 text-pink-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
                 </div>
-                <span class="text-xs text-[#E8EDE3] font-medium">Instagram Profile</span>
+                <span class="text-xs text-[#E8EDE3] font-medium">Instagram Profil</span>
               </div>
-              <div class="text-xs text-[#5A6B5E]">@competitor_account</div>
+              <div class="text-xs text-[#5A6B5E]">@rakip_hesap</div>
               <div class="mt-2 grid grid-cols-3 gap-1">
                 <div class="aspect-square rounded bg-[#7C9A82]/10"></div>
                 <div class="aspect-square rounded bg-[#7C9A82]/10"></div>
                 <div class="aspect-square rounded bg-[#7C9A82]/10"></div>
               </div>
             </div>
-
-            <!-- Connection Lines SVG -->
-            <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: -1">
-              <defs>
-                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#B8C9A3" stop-opacity="0.3" />
-                  <stop offset="100%" stop-color="#B8C9A3" stop-opacity="0.1" />
-                </linearGradient>
-              </defs>
-              <path d="M 280 80 Q 400 120 450 180" stroke="url(#lineGradient)" stroke-width="2" fill="none" stroke-dasharray="5,5" class="animate-dash" />
-              <path d="M 280 100 Q 320 200 340 280" stroke="url(#lineGradient)" stroke-width="2" fill="none" stroke-dasharray="5,5" class="animate-dash" />
-            </svg>
           </div>
         </div>
       </div>
@@ -171,7 +153,7 @@ const appUrl = 'https://app.nailing.ai';
   <section class="py-16 px-6 border-y border-[#7C9A82]/10">
     <div class="max-w-4xl mx-auto">
       <p class="text-center text-xs text-[#5A6B5E] uppercase tracking-[0.2em] mb-8">
-        Supported Platforms
+        Desteklenen Platformlar
       </p>
       <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16 text-[#5A6B5E]">
         <div class="flex items-center gap-2 hover:text-[#7C9A82] transition-colors cursor-default">
@@ -198,55 +180,49 @@ const appUrl = 'https://app.nailing.ai';
   <section id="how-it-works" class="py-32 px-6">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-20">
-        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">How It Works</p>
+        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">Nasil Calisir</p>
         <h2 class="text-3xl md:text-4xl font-semibold text-[#E8EDE3] tracking-tight">
-          Create content in 3 steps
+          3 adimda icerik uret
         </h2>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
         <div class="relative group">
-          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">
-            1
-          </div>
+          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">1</div>
           <div class="pt-10 pl-4">
-            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">Add Sources</h3>
+            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">Kaynak Ekle</h3>
             <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
-              Drag YouTube videos, Instagram profiles, or competitor accounts onto your canvas. They'll be analyzed automatically.
+              YouTube videosu, Instagram profili veya rakip hesabi kanvasa surukle. Otomatik olarak analiz edilsin.
             </p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Video URL</span>
-              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Profile link</span>
-              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Audio file</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Profil linki</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Ses dosyasi</span>
             </div>
           </div>
         </div>
 
         <div class="relative group">
-          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">
-            2
-          </div>
+          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">2</div>
           <div class="pt-10 pl-4">
-            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">Analyze with AI</h3>
+            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">AI ile Analiz Et</h3>
             <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
-              Use Claude, GPT-4, or Gemini to analyze. Get transcripts, scene descriptions, and content suggestions.
+              Claude, GPT-4 veya Gemini ile analiz yap. Transkript, sahne aciklamalari ve icerik onerileri al.
             </p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Transcript</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Transkript</span>
               <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Storyboard</span>
-              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Summary</span>
+              <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Ozet</span>
             </div>
           </div>
         </div>
 
         <div class="relative group">
-          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">
-            3
-          </div>
+          <div class="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-[#B8C9A3]/10 border border-[#B8C9A3]/20 flex items-center justify-center text-lg font-semibold text-[#B8C9A3]">3</div>
           <div class="pt-10 pl-4">
-            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">Generate Content</h3>
+            <h3 class="text-xl font-medium text-[#E8EDE3] mb-4">Icerik Uret</h3>
             <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
-              Use the analysis to create new content. Scripts, captions, hashtags, and more.
+              Analiz sonuclarini kullanarak yeni icerikler uret. Script, caption, hashtag ve daha fazlasi.
             </p>
             <div class="flex flex-wrap gap-2">
               <span class="px-2 py-1 text-xs text-[#5A6B5E] bg-[#7C9A82]/10 rounded">Script</span>
@@ -263,9 +239,9 @@ const appUrl = 'https://app.nailing.ai';
   <section id="features" class="py-32 px-6 bg-[#0A1410]">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-20">
-        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">Features</p>
+        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">Ozellikler</p>
         <h2 class="text-3xl md:text-4xl font-semibold text-[#E8EDE3] tracking-tight">
-          One canvas, complete workflow
+          Tek kanvas, tum is akisi
         </h2>
       </div>
 
@@ -276,15 +252,12 @@ const appUrl = 'https://app.nailing.ai';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Video Analysis</h3>
+          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Video Analizi</h3>
           <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
-            Extract automatic transcripts from YouTube, Instagram Reels, and TikTok. Get scene-by-scene visual analysis and storyboards.
+            YouTube, Instagram Reels ve TikTok videolarindan otomatik transkript cikar. Sahne sahne gorsel analiz ve storyboard olustur.
           </p>
           <span class="inline-flex items-center gap-2 text-sm text-[#B8C9A3] opacity-0 group-hover:opacity-100 transition-opacity">
-            Try it
-            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+            Dene <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </span>
         </a>
 
@@ -294,15 +267,12 @@ const appUrl = 'https://app.nailing.ai';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
-          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">AI Assistant</h3>
+          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">AI Asistan</h3>
           <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
-            Claude 3.5, GPT-4, Gemini, and more. All canvas data is automatically included in the context.
+            Claude 3.5, GPT-4, Gemini ve daha fazlasi. Kanvastaki tum veriler otomatik olarak context'e dahil edilir.
           </p>
           <span class="inline-flex items-center gap-2 text-sm text-[#B8C9A3] opacity-0 group-hover:opacity-100 transition-opacity">
-            Try it
-            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+            Dene <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </span>
         </a>
 
@@ -312,15 +282,12 @@ const appUrl = 'https://app.nailing.ai';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
           </div>
-          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Competitor Analysis</h3>
+          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Rakip Analizi</h3>
           <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
-            Analyze competitor Instagram profiles. Decode their content strategies and discover top-performing posts.
+            Rakip Instagram profillerini analiz et. Icerik stratejilerini coz, en iyi performans gosteren postlari kesfet.
           </p>
           <span class="inline-flex items-center gap-2 text-sm text-[#B8C9A3] opacity-0 group-hover:opacity-100 transition-opacity">
-            Try it
-            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+            Dene <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </span>
         </a>
 
@@ -330,15 +297,12 @@ const appUrl = 'https://app.nailing.ai';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
             </svg>
           </div>
-          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Visual Canvas</h3>
+          <h3 class="text-xl font-medium text-[#E8EDE3] mb-3 group-hover:text-[#B8C9A3] transition-colors">Gorsel Kanvas</h3>
           <p class="text-sm text-[#7C9A82] leading-relaxed mb-4">
-            Node-based workspace. Visualize your ideas, create connections, and organize everything in one place.
+            Node bazli calisma alani. Fikirlerini gorsellestir, baglantilar kur, her seyi tek yerde organize et.
           </p>
           <span class="inline-flex items-center gap-2 text-sm text-[#B8C9A3] opacity-0 group-hover:opacity-100 transition-opacity">
-            Try it
-            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
+            Dene <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </span>
         </a>
       </div>
@@ -349,9 +313,9 @@ const appUrl = 'https://app.nailing.ai';
   <section id="pricing" class="py-32 px-6">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-16">
-        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">Pricing</p>
+        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">Fiyatlandirma</p>
         <h2 class="text-3xl md:text-4xl font-semibold text-[#E8EDE3] tracking-tight">
-          Simple and transparent
+          Basit ve seffaf
         </h2>
       </div>
 
@@ -362,56 +326,56 @@ const appUrl = 'https://app.nailing.ai';
           <ul class="space-y-4 text-sm text-[#7C9A82] mb-8">
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              30 credits/month
+              30 kredi/ay
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              1 canvas
+              1 kanvas
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              Basic AI models
+              Temel AI modelleri
             </li>
           </ul>
           <a href={`${appUrl}/register`} class="block w-full py-3.5 text-center text-sm font-medium text-[#7C9A82] border border-[#7C9A82]/20 rounded-xl hover:border-[#7C9A82]/40 hover:text-[#B8C9A3] transition-all duration-300">
-            Get Started Free
+            Ucretsiz Basla
           </a>
         </div>
 
         <div class="p-8 rounded-2xl bg-[#0F1F18] border-2 border-[#B8C9A3]/40 relative scale-105 shadow-xl shadow-[#B8C9A3]/5">
           <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#B8C9A3] text-[#0D1A14] text-xs font-semibold rounded-full">
-            Most Popular
+            En Populer
           </div>
           <p class="text-sm text-[#B8C9A3] mb-2">Pro</p>
           <div class="flex items-baseline gap-1">
             <span class="text-4xl font-semibold text-[#E8EDE3]">$29</span>
-            <span class="text-sm text-[#5A6B5E]">/mo</span>
+            <span class="text-sm text-[#5A6B5E]">/ay</span>
           </div>
-          <p class="text-xs text-[#5A6B5E] mt-1 mb-6">or $290/year (2 months free)</p>
+          <p class="text-xs text-[#5A6B5E] mt-1 mb-6">veya $290/yil (2 ay ucretsiz)</p>
           <ul class="space-y-4 text-sm text-[#7C9A82] mb-8">
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              500 credits/month
+              500 kredi/ay
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              Unlimited canvases
+              Sinirsiz kanvas
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              All AI models
+              Tum AI modelleri
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              Video analysis
+              Video analizi
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              Competitor analysis
+              Rakip analizi
             </li>
           </ul>
           <a href={`${appUrl}/register`} class="block w-full py-3.5 text-center text-sm font-semibold text-[#0D1A14] bg-[#B8C9A3] rounded-xl hover:bg-[#C8D9B3] transition-all duration-300">
-            Upgrade to Pro
+            Pro'ya Gec
           </a>
         </div>
 
@@ -419,29 +383,29 @@ const appUrl = 'https://app.nailing.ai';
           <p class="text-sm text-[#7C9A82] mb-2">Business</p>
           <div class="flex items-baseline gap-1">
             <span class="text-4xl font-semibold text-[#E8EDE3]">$79</span>
-            <span class="text-sm text-[#5A6B5E]">/mo</span>
+            <span class="text-sm text-[#5A6B5E]">/ay</span>
           </div>
-          <p class="text-xs text-[#5A6B5E] mt-1 mb-6">or $790/year (2 months free)</p>
+          <p class="text-xs text-[#5A6B5E] mt-1 mb-6">veya $790/yil (2 ay ucretsiz)</p>
           <ul class="space-y-4 text-sm text-[#7C9A82] mb-8">
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              1500 credits/month
+              1500 kredi/ay
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              Team sharing (5 users)
+              Ekip paylasimi (5 kisi)
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              API access
+              API erisimi
             </li>
             <li class="flex items-center gap-3">
               <svg class="w-5 h-5 text-[#B8C9A3] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-              Priority support
+              Oncelikli destek
             </li>
           </ul>
           <a href="mailto:hello@nailing.ai" class="block w-full py-3.5 text-center text-sm font-medium text-[#7C9A82] border border-[#7C9A82]/20 rounded-xl hover:border-[#7C9A82]/40 hover:text-[#B8C9A3] transition-all duration-300">
-            Contact Us
+            Iletisime Gec
           </a>
         </div>
       </div>
@@ -452,70 +416,60 @@ const appUrl = 'https://app.nailing.ai';
   <section id="faq" class="py-32 px-6 bg-[#0A1410]">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-16">
-        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">FAQ</p>
+        <p class="text-sm text-[#7C9A82] tracking-[0.2em] uppercase mb-4">SSS</p>
         <h2 class="text-3xl md:text-4xl font-semibold text-[#E8EDE3] tracking-tight">
-          Frequently Asked Questions
+          Sik Sorulan Sorular
         </h2>
       </div>
 
       <div class="space-y-4">
         <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
           <summary class="flex items-center justify-between cursor-pointer list-none">
-            <span class="text-[#E8EDE3] font-medium">How does the credit system work?</span>
-            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
+            <span class="text-[#E8EDE3] font-medium">Kredi sistemi nasil calisiyor?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </summary>
           <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
-            Each AI operation consumes a certain amount of credits. For example, an AI message costs 1 credit, video analysis costs 5 credits, and competitor profile analysis costs 3 credits. Your credits refresh every month.
+            Her AI islemi belirli miktarda kredi tuketir. Ornegin bir AI mesaji 1 kredi, video analizi 5 kredi, rakip profil analizi 3 kredi tuketir. Kredileriniz her ay yenilenir.
           </p>
         </details>
 
         <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
           <summary class="flex items-center justify-between cursor-pointer list-none">
-            <span class="text-[#E8EDE3] font-medium">Which AI models are supported?</span>
-            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
+            <span class="text-[#E8EDE3] font-medium">Hangi AI modelleri destekleniyor?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </summary>
           <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
-            We support Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, Llama 3.1, and many more models. Pro and Business plans have access to all models.
+            Claude 3.5 Sonnet, GPT-4o, Gemini 1.5 Pro, Llama 3.1 ve daha bircok model desteklenmektedir. Pro ve Business planlarinda tum modellere erisebilirsiniz.
           </p>
         </details>
 
         <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
           <summary class="flex items-center justify-between cursor-pointer list-none">
-            <span class="text-[#E8EDE3] font-medium">How long does video analysis take?</span>
-            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
+            <span class="text-[#E8EDE3] font-medium">Video analizi ne kadar surer?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </summary>
           <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
-            Depending on the video length, it takes between 30 seconds to 2 minutes. Transcripts, scene analysis, and storyboards are generated automatically.
+            Video uzunluguna bagli olarak 30 saniye ile 2 dakika arasinda degisir. Transkript, sahne analizi ve storyboard otomatik olarak olusturulur.
           </p>
         </details>
 
         <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
           <summary class="flex items-center justify-between cursor-pointer list-none">
-            <span class="text-[#E8EDE3] font-medium">Can I cancel my subscription anytime?</span>
-            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
+            <span class="text-[#E8EDE3] font-medium">Aboneligimi istedigim zaman iptal edebilir miyim?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </summary>
           <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
-            Yes, you can cancel your subscription at any time. After cancellation, you'll continue to have access to all features until the end of your current billing period.
+            Evet, aboneliginizi istediginiz zaman iptal edebilirsiniz. Iptal sonrasi mevcut donem sonuna kadar tum ozellikleri kullanmaya devam edebilirsiniz.
           </p>
         </details>
 
         <details class="group p-6 rounded-2xl bg-[#0D1A14] border border-[#7C9A82]/10 hover:border-[#7C9A82]/20 transition-colors">
           <summary class="flex items-center justify-between cursor-pointer list-none">
-            <span class="text-[#E8EDE3] font-medium">Is my data secure?</span>
-            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
+            <span class="text-[#E8EDE3] font-medium">Verilerim guvende mi?</span>
+            <svg class="w-5 h-5 text-[#7C9A82] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
           </summary>
           <p class="mt-4 text-sm text-[#7C9A82] leading-relaxed">
-            Yes, all data is encrypted and stored securely. Your canvases and content belong only to you. We never share with third parties or use your data for AI model training.
+            Evet, tum veriler sifrelenerek saklanir. Kanvaslariniz ve icerikleriniz sadece size aittir. Ucuncu taraflarla paylasilmaz ve AI model egitimi icin kullanilmaz.
           </p>
         </details>
       </div>
@@ -526,16 +480,16 @@ const appUrl = 'https://app.nailing.ai';
   <section class="py-32 px-6">
     <div class="max-w-2xl mx-auto text-center">
       <h2 class="text-3xl md:text-5xl font-semibold text-[#E8EDE3] tracking-tight mb-6">
-        Start creating today
+        Hemen basla
       </h2>
       <p class="text-lg text-[#7C9A82] mb-10">
-        No credit card required. Try with 30 free credits.
+        Kredi karti gerektirmez. 30 ucretsiz kredi ile dene.
       </p>
       <a
         href={`${appUrl}/register`}
         class="inline-flex items-center gap-3 px-10 py-4 text-base font-medium text-[#0D1A14] bg-[#B8C9A3] rounded-xl hover:bg-[#C8D9B3] transition-all duration-300 hover:scale-[1.02]"
       >
-        Create Free Account
+        Ucretsiz Hesap Olustur
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
         </svg>
@@ -548,31 +502,29 @@ const appUrl = 'https://app.nailing.ai';
     <div class="max-w-5xl mx-auto">
       <div class="flex flex-col md:flex-row items-start justify-between gap-12 mb-12">
         <div>
-          <span class="text-xl font-medium text-[#B8C9A3] glow-text-subtle">
-            nailing.ai
-          </span>
+          <span class="text-xl font-medium text-[#B8C9A3] glow-text-subtle">nailing.ai</span>
           <p class="mt-3 text-sm text-[#5A6B5E] max-w-xs">
-            AI-powered content creation platform. Video analysis, competitor research, and more.
+            AI destekli icerik uretim platformu. Video analizi, rakip arastirmasi ve daha fazlasi.
           </p>
         </div>
         <div class="flex gap-16">
           <div>
-            <p class="text-sm font-medium text-[#7C9A82] mb-4">Product</p>
+            <p class="text-sm font-medium text-[#7C9A82] mb-4">Urun</p>
             <ul class="space-y-3 text-sm text-[#5A6B5E]">
-              <li><a href="#features" class="hover:text-[#7C9A82] transition-colors">Features</a></li>
-              <li><a href="#pricing" class="hover:text-[#7C9A82] transition-colors">Pricing</a></li>
-              <li><a href="#faq" class="hover:text-[#7C9A82] transition-colors">FAQ</a></li>
+              <li><a href="#features" class="hover:text-[#7C9A82] transition-colors">Ozellikler</a></li>
+              <li><a href="#pricing" class="hover:text-[#7C9A82] transition-colors">Fiyatlar</a></li>
+              <li><a href="#faq" class="hover:text-[#7C9A82] transition-colors">SSS</a></li>
             </ul>
           </div>
           <div>
-            <p class="text-sm font-medium text-[#7C9A82] mb-4">Legal</p>
+            <p class="text-sm font-medium text-[#7C9A82] mb-4">Yasal</p>
             <ul class="space-y-3 text-sm text-[#5A6B5E]">
-              <li><a href="/privacy" class="hover:text-[#7C9A82] transition-colors">Privacy</a></li>
-              <li><a href="/terms" class="hover:text-[#7C9A82] transition-colors">Terms</a></li>
+              <li><a href="/privacy" class="hover:text-[#7C9A82] transition-colors">Gizlilik</a></li>
+              <li><a href="/terms" class="hover:text-[#7C9A82] transition-colors">Sartlar</a></li>
             </ul>
           </div>
           <div>
-            <p class="text-sm font-medium text-[#7C9A82] mb-4">Contact</p>
+            <p class="text-sm font-medium text-[#7C9A82] mb-4">Iletisim</p>
             <ul class="space-y-3 text-sm text-[#5A6B5E]">
               <li><a href="mailto:hello@nailing.ai" class="hover:text-[#7C9A82] transition-colors">hello@nailing.ai</a></li>
               <li><a href="https://twitter.com/nailingai" target="_blank" class="hover:text-[#7C9A82] transition-colors">Twitter</a></li>
@@ -581,13 +533,11 @@ const appUrl = 'https://app.nailing.ai';
         </div>
       </div>
       <div class="pt-8 border-t border-[#7C9A82]/10 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-[#5A6B5E]">
-          &copy; 2025 nailing.ai. All rights reserved.
-        </p>
+        <p class="text-sm text-[#5A6B5E]">&copy; 2025 nailing.ai. Tum haklari saklidir.</p>
         <div class="flex items-center gap-4 text-xs text-[#5A6B5E]">
-          <a href="/tr" class="hover:text-[#7C9A82] transition-colors">Turkce</a>
+          <a href="/" class="hover:text-[#7C9A82] transition-colors">English</a>
           <span>•</span>
-          <span>Made with care in Istanbul</span>
+          <span>Istanbul'da ozenle yapildi</span>
         </div>
       </div>
     </div>
@@ -599,38 +549,13 @@ const appUrl = 'https://app.nailing.ai';
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
   }
-
   @keyframes float-slow {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-6px); }
   }
-
-  @keyframes dash {
-    to { stroke-dashoffset: -20; }
-  }
-
-  .animate-float {
-    animation: float 4s ease-in-out infinite;
-  }
-
-  .animate-float-slow {
-    animation: float-slow 5s ease-in-out infinite;
-  }
-
-  .animate-float-delayed {
-    animation: float 4s ease-in-out infinite;
-    animation-delay: 1s;
-  }
-
-  .animate-dash {
-    animation: dash 2s linear infinite;
-  }
-
-  details summary::-webkit-details-marker {
-    display: none;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
+  .animate-float { animation: float 4s ease-in-out infinite; }
+  .animate-float-slow { animation: float-slow 5s ease-in-out infinite; }
+  .animate-float-delayed { animation: float 4s ease-in-out infinite; animation-delay: 1s; }
+  details summary::-webkit-details-marker { display: none; }
+  html { scroll-behavior: smooth; }
 </style>
