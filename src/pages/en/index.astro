@@ -16,6 +16,7 @@ const appUrl = 'https://app.nailingai.co';
       <div class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
         <a href="#features" class="text-sm text-[#9FADA5] hover:text-[#E8F0EC] transition-colors duration-300">Features</a>
         <a href="#beta" class="text-sm text-[#9FADA5] hover:text-[#E8F0EC] transition-colors duration-300">Beta</a>
+        <a href="#faq" class="text-sm text-[#9FADA5] hover:text-[#E8F0EC] transition-colors duration-300">FAQ</a>
       </div>
       <div class="flex items-center gap-4">
         <button
@@ -63,16 +64,24 @@ const appUrl = 'https://app.nailingai.co';
           <p class="text-sm text-[#E8F0EC] font-medium">8 people in line</p>
         </div>
 
-        <h1 class="text-5xl md:text-7xl font-semibold leading-[1.05] mb-8 tracking-tight">
+        <h1 class="text-5xl md:text-7xl font-semibold leading-[1.05] mb-6 tracking-tight">
           <span class="text-[#E8F0EC]">Redefine your</span>
           <br />
           <span class="text-gradient glow-text">content creation</span>
         </h1>
 
-        <p class="text-lg md:text-xl text-[#9FADA5] max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p class="text-lg md:text-xl text-[#10B981] font-medium mb-4">
+          See what your competitors do, do it better with AI.
+        </p>
+
+        <p class="text-lg md:text-xl text-[#9FADA5] max-w-2xl mx-auto mb-6 leading-relaxed">
           Video analysis, competitor research, and AI-powered content creation.
           <br class="hidden md:block" />
           One canvas, unlimited possibilities.
+        </p>
+
+        <p class="text-sm text-[#5F7168] mb-12">
+          Free in beta • Starting at $29/mo after
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
@@ -185,7 +194,7 @@ const appUrl = 'https://app.nailingai.co';
     </div>
   </section>
 
-  <!-- Demo Video -->
+  <!-- Demo Video - hidden for now
   <section class="py-16 px-6">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-10">
@@ -207,6 +216,7 @@ const appUrl = 'https://app.nailingai.co';
       </div>
     </div>
   </section>
+  -->
 
   <!-- Features -->
   <section id="features" class="py-32 px-6 bg-[#151D19]">
@@ -335,12 +345,49 @@ const appUrl = 'https://app.nailingai.co';
   <!-- FAQ -->
   <section id="faq" class="py-32 px-6 bg-[#151D19]">
     <div class="max-w-3xl mx-auto">
-      <div class="text-center">
+      <div class="text-center mb-12">
         <p class="text-sm text-[#10B981] tracking-[0.2em] uppercase mb-4">FAQ</p>
         <h2 class="text-3xl md:text-4xl font-semibold text-[#E8F0EC] tracking-tight mb-4">
           Frequently Asked Questions
         </h2>
-        <p class="text-[#9FADA5]">Coming soon...</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group p-6 rounded-xl bg-[#0F1512] border border-[#243029]">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8F0EC] font-medium">What is nailing.ai?</span>
+            <svg class="w-5 h-5 text-[#5F7168] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#9FADA5] leading-relaxed">
+            nailing.ai is an AI-powered platform that allows you to analyze videos, research competitors, and produce content. You can track what your competitors do on social media and create your own unique content.
+          </p>
+        </details>
+
+        <details class="group p-6 rounded-xl bg-[#0F1512] border border-[#243029]">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8F0EC] font-medium">How can I join the beta?</span>
+            <svg class="w-5 h-5 text-[#5F7168] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#9FADA5] leading-relaxed">
+            Just fill out the waitlist form. We will contact you when spots become available. Currently, we are accepting a limited number of users for closed beta.
+          </p>
+        </details>
+
+        <details class="group p-6 rounded-xl bg-[#0F1512] border border-[#243029]">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8F0EC] font-medium">Is it free during beta?</span>
+            <svg class="w-5 h-5 text-[#5F7168] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#9FADA5] leading-relaxed">
+            Yes! It's completely free during the beta period. Additionally, beta users will receive a lifetime 50% discount.
+          </p>
+        </details>
       </div>
     </div>
   </section>

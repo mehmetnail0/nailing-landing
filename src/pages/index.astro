@@ -16,6 +16,7 @@ const appUrl = 'https://app.nailingai.co';
       <div class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
         <a href="#features" class="text-sm text-[#9FADA5] hover:text-[#E8F0EC] transition-colors duration-300">Özellikler</a>
         <a href="#beta" class="text-sm text-[#9FADA5] hover:text-[#E8F0EC] transition-colors duration-300">Fırsat</a>
+        <a href="#faq" class="text-sm text-[#9FADA5] hover:text-[#E8F0EC] transition-colors duration-300">SSS</a>
       </div>
       <div class="flex items-center gap-4">
         <button
@@ -69,11 +70,12 @@ const appUrl = 'https://app.nailingai.co';
           <span class="text-gradient glow-text">yeniden tanımla</span>
         </h1>
 
-        <p class="text-lg md:text-xl text-[#9FADA5] max-w-2xl mx-auto mb-12 leading-relaxed">
-          Video analizi, rakip araştırması ve AI destekli içerik üretimi.
+        <p class="text-lg md:text-xl text-[#9FADA5] max-w-2xl mx-auto mb-6 leading-relaxed">
+          Rakiplerin ne yaptığını gör, AI ile daha iyisini yap.
           <br class="hidden md:block" />
-          Tek kanvas, sınırsız olanak.
+          Video analizi, rakip araştırması, tek kanvas.
         </p>
+        <p class="text-sm text-[#10B981] mb-12">Beta'da ücretsiz • Sonra $29/ay'dan başlayan fiyatlar</p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <a
@@ -185,7 +187,7 @@ const appUrl = 'https://app.nailingai.co';
     </div>
   </section>
 
-  <!-- Demo Video -->
+  <!-- Demo Video - şimdilik gizli
   <section class="py-16 px-6">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-10">
@@ -207,6 +209,7 @@ const appUrl = 'https://app.nailingai.co';
       </div>
     </div>
   </section>
+  -->
 
   <!-- Features -->
   <section id="features" class="py-32 px-6 bg-[#151D19]">
@@ -335,12 +338,43 @@ const appUrl = 'https://app.nailingai.co';
   <!-- FAQ -->
   <section id="faq" class="py-32 px-6 bg-[#151D19]">
     <div class="max-w-3xl mx-auto">
-      <div class="text-center">
+      <div class="text-center mb-12">
         <p class="text-sm text-[#10B981] tracking-[0.2em] uppercase mb-4">SSS</p>
-        <h2 class="text-3xl md:text-4xl font-semibold text-[#E8F0EC] tracking-tight mb-4">
+        <h2 class="text-3xl md:text-4xl font-semibold text-[#E8F0EC] tracking-tight">
           Sık Sorulan Sorular
         </h2>
-        <p class="text-[#9FADA5]">Yakında...</p>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group p-6 rounded-2xl bg-[#0F1512] border border-[#243029] hover:border-[#2E3D35] transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8F0EC] font-medium">nailing.ai ne işe yarıyor?</span>
+            <svg class="w-5 h-5 text-[#5F7168] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#9FADA5] leading-relaxed">
+            Rakiplerinin içeriklerini analiz edip, AI ile daha iyi içerikler üretmeni sağlıyor. Video analizi, transkript çıkarma ve içerik fikirleri tek bir yerde.
+          </p>
+        </details>
+
+        <details class="group p-6 rounded-2xl bg-[#0F1512] border border-[#243029] hover:border-[#2E3D35] transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8F0EC] font-medium">Beta'ya nasıl katılabilirim?</span>
+            <svg class="w-5 h-5 text-[#5F7168] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#9FADA5] leading-relaxed">
+            Waitlist'e email'inle kayıt ol. İlk 15 kişiye özel erişim ve ömür boyu %50 indirim hakkı kazanırsın.
+          </p>
+        </details>
+
+        <details class="group p-6 rounded-2xl bg-[#0F1512] border border-[#243029] hover:border-[#2E3D35] transition-colors">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="text-[#E8F0EC] font-medium">Hangi platformları destekliyor?</span>
+            <svg class="w-5 h-5 text-[#5F7168] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+          </summary>
+          <p class="mt-4 text-sm text-[#9FADA5] leading-relaxed">
+            YouTube, Instagram ve TikTok videolarını analiz edebilirsin. Yakında daha fazla platform eklenecek.
+          </p>
+        </details>
       </div>
     </div>
   </section>
